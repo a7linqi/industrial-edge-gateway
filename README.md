@@ -89,10 +89,12 @@ flowchart LR
 ```text
 industrial-edge-gateway/
 ├── docs/
-│   ├── architecture.md      # 系统架构与任务模型
-│   ├── protocol.md          # Modbus RTU 与应用层协议
-│   ├── register-map.md      # 4 个从站寄存器表与镜像映射
-│   └── test-plan.md         # 测试矩阵与稳定性计划
+│   ├── project-framework.md    # 系统组成、模块职责、数据流
+│   ├── development-framework.md# 开发流程、任务卡、质量门禁
+│   ├── architecture.md         # 系统架构与任务模型
+│   ├── protocol.md             # Modbus RTU 与应用层协议
+│   ├── register-map.md         # 4 个从站寄存器表与镜像映射
+│   └── test-plan.md            # 测试矩阵与稳定性计划
 ├── gateway-f407/            # FreeRTOS 网关固件（计划中）
 ├── device-f103/             # Modbus RTU 从站固件（计划中）
 ├── linux-server/            # Linux C epoll 服务（计划中）
@@ -114,6 +116,8 @@ industrial-edge-gateway/
 
 ## 设计文档
 
+- [项目总体框架](docs/project-framework.md)：系统组成、模块职责、数据流、里程碑
+- [开发框架](docs/development-framework.md)：任务卡、分支、测试与质量门禁
 - [系统架构](docs/architecture.md)
 - [协议说明](docs/protocol.md)
 - [寄存器表](docs/register-map.md)
